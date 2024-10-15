@@ -11,6 +11,7 @@
     width: 100vw;
     background-color: #2779bd;
     display: flex;
+    flex-direction: row;
     gap: 3px;
     justify-content: space-around;
     justify-items: center;
