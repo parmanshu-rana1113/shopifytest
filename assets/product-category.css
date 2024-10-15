@@ -3,6 +3,8 @@
  .container {
     background-color: #2779bd;
     display: flex;
+    gap: 3px;
+    justify-items: center;
  }
 .product-card {
     background-color: #ffffff;
