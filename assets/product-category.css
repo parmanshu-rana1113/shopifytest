@@ -47,7 +47,7 @@
   .product-card img {
     width: 100%;
     height: 12rem;
-    object-fit: contain;
+    object-fit: cover;
   }
   
   .product-info {
@@ -65,7 +65,7 @@
   }
   
   .product-card button {
-    width: fit-content;
+    width:100%a;
     text-align: center;
     background-color: #3490dc;
     color: #ffffff;
