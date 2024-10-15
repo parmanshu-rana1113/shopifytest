@@ -4,7 +4,9 @@
     background-color: #2779bd;
     display: flex;
     gap: 3px;
+    justify-content: space-around;
     justify-items: center;
+    align-items: center;
  }
 .product-card {
     background-color: #ffffff;
@@ -21,12 +23,12 @@
   
   .product-card h2 {
     font-size: 1.25rem;
-    color: #3490dc; /* Tailwind's 'blue-500' color */
+    color: #3490dc; 
     font-weight: bold;
   }
   
   .product-card p {
-    color: #4a5568; /* Tailwind's 'gray-700' color */
+    color: #4a5568;
   }
   
   .product-card button {
@@ -38,6 +40,6 @@
   }
   
   .product-card button:hover {
-    background-color: #2779bd; /* Darker shade of blue */
+    background-color: #2779bd; 
   }
   
