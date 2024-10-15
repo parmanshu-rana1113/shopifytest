@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Page</title>
+  <!-- Link to the external product-category.css file -->
+  <link rel="stylesheet" href="{{ 'product-category.css' | asset_url }}">
+</head>
+<body>
+ 
+  <div class="product-page">
+    <h1 class="heading">Product Category</h1>
+    
+    <div class="container">
+      <!-- Herbicide Card -->
+      <div class="product-card">
+        <img src="https://media.istockphoto.com/id/471505987/photo/roundup-weed-and-grass-killer.jpg?s=612x612&w=0&k=20&c=CHjKN0G-SlbZsB34Y5P74_eGgzEL2814foHMU4pn-TU=" alt="Herbicide Image">
+        <div class="product-info">
+          <h2>Herbicide</h2>
+          <p>Effective solution for weed control in crop.</p>
+          <button>Explore Products</button>
+        </div>
+      </div>
+
+      <!-- Pesticide Card -->
+      <div class="product-card">
+        <img src="https://media.istockphoto.com/id/471505987/photo/roundup-weed-and-grass-killer.jpg?s=612x612&w=0&k=20&c=CHjKN0G-SlbZsB34Y5P74_eGgzEL2814foHMU4pn-TU=" alt="Pesticide Image">
+        <div class="product-info">
+          <h2>Pesticide</h2>
+          <p>Protect your crops with advanced pest control.</p>
+          <button>Explore Products</button>
+        </div>
+      </div>
+
+      <!-- Growth Card -->
+      <div class="product-card">
+        <img src="https://media.istockphoto.com/id/471505987/photo/roundup-weed-and-grass-killer.jpg?s=612x612&w=0&k=20&c=CHjKN0G-SlbZsB34Y5P74_eGgzEL2814foHMU4pn-TU=" alt="Growth Image">
+        <div class="product-info">
+          <h2>Growth</h2>
+          <p>Boost crop growth with our premium solutions.</p>
+          <button>Explore Products</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="https://media.istockphoto.com/id/471505987/photo/roundup-weed-and-grass-killer.jpg?s=612x612&w=0&k=20&c=CHjKN0G-SlbZsB34Y5P74_eGgzEL2814foHMU4pn-TU=" alt="Growth Image">
+        <div class="product-info">
+          <h2>Growth</h2>
+          <p>Boost crop growth with our premium solutions.</p>
+          <button>Explore Products</button>
+        </div>
+      </div>
+    </div>
+   
+  </div>
+
+  <!-- Optional: Add other product-related content here -->
+
+  {% schema %}
+  {
+    "name": "insight",
+    "settings": [],
+    "presets": [
+      {
+        "name": "insight"
+      }
+    ]
+  }
+  {% endschema %}
+</body>
+</html>
