@@ -18,20 +18,25 @@
   position: relative;
   max-width: 100%;
   overflow: hidden;
+  margin: 0 auto;
 }
 
 /* Carousel Wrapper */
-.carousel {
-  position: absolute;
+.carousel-wrapper {
   display: flex;
-  flex-direction: row;  /* Ensure images are placed horizontally */
-  transition: transform 0.5s ease-in-out;
   width: 100%;
+  overflow: hidden;
 }
 
 /* Carousel Slide */
+.carousel-slide {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 400%; /* Ensure all images fit in one horizontal row */
+}
+
 .carousel-slide img {
-  width: 100%;  /* Make sure each image is 100% of the container */
+  width: 100vw;  /* Make sure each image takes up full viewport width */
   height: auto; /* Maintain image aspect ratio */
   object-fit: cover; /* Ensure the image covers the area without stretching */
 }
