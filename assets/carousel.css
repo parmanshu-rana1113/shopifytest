@@ -9,12 +9,14 @@
 /* Carousel Wrapper */
 .carousel {
   display: flex;
+  
   transition: transform 0.5s ease-in-out;
   width: 100%; /* Make sure the carousel spans full width */
 }
 
 /* Carousel Slide */
 .carousel-slide img {
+  flex-direction: row;
   width: 100%;  /* Make sure each image is 100% of the container */
   height: auto; /* Maintain image aspect ratio */
   object-fit: cover; /* Ensure the image covers the area without stretching */
