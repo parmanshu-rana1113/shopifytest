@@ -1,6 +1,14 @@
 /* product-category.css */
 
+ .heading{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+ }
  .container {
+    width: 100vw;
     background-color: #2779bd;
     display: flex;
     gap: 3px;
