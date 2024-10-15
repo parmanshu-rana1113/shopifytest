@@ -1,0 +1,64 @@
+/* Carousel Container */
+.carousel-container {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  margin: 0 auto; /* Center carousel */
+}
+
+/* Carousel Wrapper */
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%; /* Make sure the carousel spans full width */
+}
+
+/* Carousel Slide */
+.carousel-slide img {
+  width: 100%;  /* Make sure each image is 100% of the container */
+  height: auto; /* Maintain image aspect ratio */
+  object-fit: cover; /* Ensure the image covers the area without stretching */
+}
+
+/* Carousel Buttons */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  font-size: 2rem;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.carousel-btn.left {
+  left: 10px;
+}
+
+.carousel-btn.right {
+  right: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .carousel-slide img {
+      height: 60vh; /* Adjust for medium screens */
+  }
+
+  .carousel-btn {
+      font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-slide img {
+      height: 40vh; /* Adjust for small screens */
+  }
+
+  .carousel-btn {
+      font-size: 1.25rem;
+  }
+}
