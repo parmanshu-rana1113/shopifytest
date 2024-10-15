@@ -1,51 +1,62 @@
-<div class="w-full h-500px p-5 bg-gray-100">
-  <h1 class="text-3xl font-bold text-center mb-6">Hey, 3 Good Products</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Page</title>
+  <!-- Link to the external product-category.css file -->
+  <link rel="stylesheet" href="{{ 'product-category.css' | asset_url }}">
+</head>
+<body>
+  <!-- Products Section -->
+  <div class="w-full h-500px p-5 bg-gray-100">
+    <h1 class="text-3xl font-bold text-center mb-6">Hey, 3 Good Products</h1>
 
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-    <!-- Herbicide Card -->
-    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-      <img class="w-full h-48 object-cover" src="herbicide.jpg" alt="Herbicide Image">
-      <div class="p-6">
-        <h2 class="text-xl text-blue font-bold mb-2">Herbicide</h2>
-        <p class="text-gray-700">Effective solution for weed control.</p>
-        <button class="mt-4 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700">Explore Products</button>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- Herbicide Card -->
+      <div class="product-card">
+        <img src="herbicide.jpg" alt="Herbicide Image">
+        <div class="p-6">
+          <h2>Herbicide</h2>
+          <p>Effective solution for weed control.</p>
+          <button>Explore Products</button>
+        </div>
       </div>
-    </div>
 
-    <!-- Pesticide Card -->
-    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-      <img class="w-full h-48 object-cover" src="pesticide.jpg" alt="Pesticide Image">
-      <div class="p-6">
-        <h2 class="text-xl font-bold mb-2">Pesticide</h2>
-        <p class="text-gray-700">Protect your crops with advanced pest control.</p>
-        <button class="mt-4 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700">Explore Products</button>
+      <!-- Pesticide Card -->
+      <div class="product-card">
+        <img src="pesticide.jpg" alt="Pesticide Image">
+        <div class="p-6">
+          <h2>Pesticide</h2>
+          <p>Protect your crops with advanced pest control.</p>
+          <button>Explore Products</button>
+        </div>
       </div>
-    </div>
 
-    <!-- Growth Card -->
-    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-      <img class="w-full h-48 object-cover" src="growth.jpg" alt="Growth Image">
-      <div class="p-6">
-        <h2 class="text-xl font-bold mb-2">Growth</h2>
-        <p class="text-gray-700">Boost crop growth with our premium solutions.</p>
-        <button class="mt-4 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700">Explore Products</button>
+      <!-- Growth Card -->
+      <div class="product-card">
+        <img src="growth.jpg" alt="Growth Image">
+        <div class="p-6">
+          <h2>Growth</h2>
+          <p>Boost crop growth with our premium solutions.</p>
+          <button>Explore Products</button>
+        </div>
       </div>
     </div>
   </div>
-</div>
-   
 
+  <!-- Optional: Add other product-related content here -->
 
-
-{% schema %}
+  {% schema %}
   {
     "name": "Product",
-    "settings": [
-    ],
-  "presets":[
-  {
-    "name":"Product"
+    "settings": [],
+    "presets": [
+      {
+        "name": "Product"
+      }
+    ]
   }
-  ]
-  }
-{% endschema %}
+  {% endschema %}
+</body>
+</html>

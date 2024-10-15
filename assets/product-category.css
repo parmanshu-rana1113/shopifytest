@@ -1,0 +1,37 @@
+/* product-category.css */
+
+.product-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: 12rem;
+    object-fit: cover;
+  }
+  
+  .product-card h2 {
+    font-size: 1.25rem;
+    color: #3490dc; /* Tailwind's 'blue-500' color */
+    font-weight: bold;
+  }
+  
+  .product-card p {
+    color: #4a5568; /* Tailwind's 'gray-700' color */
+  }
+  
+  .product-card button {
+    background-color: #3490dc;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .product-card button:hover {
+    background-color: #2779bd; /* Darker shade of blue */
+  }
+  
