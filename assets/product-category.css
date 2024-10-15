@@ -1,33 +1,41 @@
 /* product-category.css */
 
- .heading{
+.product-page {
     width: 100vw;
-    /* display: flex; */
-    /* justify-content: center;
-    justify-items: center;
-    align-items: center; */
- }
- .container {
-    width: 100vw;
-    /* background-color: #2779bd; */
+    padding: 20px; /* Optional: adjust padding as needed */
+    background-color: #f7fafc; /* Light gray background */
+  }
+  
+  .heading {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px; /* Space between heading and container */
+  }
+  
+  .container {
     display: flex;
-    flex-direction: row;
-    gap: 3px;
-    justify-content: space-around;
-    justify-items: center;
-    align-items: center;
- }
-.product-card {
+    flex-wrap: wrap; /* Allow wrapping for responsive layout */
+    gap: 20px; /* Space between cards */
+    justify-content: space-around; /* Center cards */
+  }
+  
+  .product-card {
     background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    flex: 1 1 30%; /* Flexbox for responsive card size */
+    max-width: 300px; /* Optional: limit max card width */
   }
   
   .product-card img {
     width: 100%;
     height: 12rem;
     object-fit: cover;
+  }
+  
+  .product-info {
+    padding: 1rem; /* Padding for content */
   }
   
   .product-card h2 {
