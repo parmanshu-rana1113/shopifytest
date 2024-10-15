@@ -1,0 +1,40 @@
+/* CSS Variables */
+.gallery {
+  --d: 10s; /* Duration */
+  display: grid;
+  overflow: hidden;
+  width: 380px;
+  mask-image: linear-gradient(90deg, rgba(0, 0, 0, 0), black 10%, black 90%, rgba(0, 0, 0, 0)); /* Ensures a fading mask effect */
+}
+
+.gallery > img {
+  grid-area: 1/1;
+  width: 100%;
+  aspect-ratio: 1.5; /* Maintains image aspect ratio */
+  object-fit: cover;
+  animation: r var(--d) linear infinite;
+}
+
+/* Adding delay to each image based on nth-child */
+.gallery > img:nth-child(2) {
+  animation-delay: calc((1 - 2) / 5 * var(--d));
+}
+.gallery > img:nth-child(3) {
+  animation-delay: calc((1 - 3) / 5 * var(--d));
+}
+.gallery > img:nth-child(4) {
+  animation-delay: calc((1 - 4) / 5 * var(--d));
+}
+.gallery > img:nth-child(5) {
+  animation-delay: calc((1 - 5) / 5 * var(--d));
+}
+
+/* Keyframes for the translation effect */
+@keyframes r {
+  80% {
+    transform: translateX(-400%); /* Shifts all images to the left */
+  }
+  80.01% {
+    transform: translateX(100%); /* Jump back to the first image */
+  }
+}
