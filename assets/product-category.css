@@ -8,9 +8,10 @@
   
   .heading {
     text-align: start;
-    font-size: 2rem;
+    font-size: 4rem;
     margin-bottom: 20px; 
-    font-size: larger;
+    padding: 2rem;
+    /* font-size: larger; */
   }
   
   .container {
@@ -21,6 +22,7 @@
   }
   
   .product-card {
+    padding: 3rem;
     background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -33,6 +35,7 @@
     width: 100%;
     height: 12rem;
     object-fit: cover;
+    padding: 2rem;
   }
   
   .product-info {
@@ -43,6 +46,7 @@
     font-size: 3.25rem;
     color: #3490dc; 
     font-weight: bold;
+    padding: 1rem;
   }
   
   .product-card p {
