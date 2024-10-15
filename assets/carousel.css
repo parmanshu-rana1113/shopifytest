@@ -22,7 +22,9 @@
 
 /* Carousel Wrapper */
 .carousel {
-  display: flex;  /* Ensure images are placed horizontally */
+  position: absolute;
+  display: flex;
+  flex-direction: row;  /* Ensure images are placed horizontally */
   transition: transform 0.5s ease-in-out;
   width: 100%;
 }
