@@ -3,7 +3,11 @@ module.exports = {
   purge: [
     './**/*.liquid', 
   ],
-  content: [],
+  content: [
+    './**/*.liquid',
+    './src/**/*.html',
+    './src/**/*.js',
+  ],
   theme: {
     extend: {},
   },
