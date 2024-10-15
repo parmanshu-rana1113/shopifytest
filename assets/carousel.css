@@ -1,46 +1,46 @@
 /* Insight container styles */
 .insight-container {
-  width: 100vw;
+  width: 100vw ;
   padding: 20px; /* Add padding for better spacing */
   background-color: #f4f4f4;
 }
 
 /* Insight heading styling */
 .insight-heading {
-  width: 100%;
-  font-size: 2.5rem;
-  text-align: center;
-  margin-bottom: 20px; /* Add space below the heading */
+  width: 100% !important;
+  font-size: 2.5rem !important; 
+  text-align: center !important;
+  margin-bottom: 20px !important; /* Add space below the heading */
 }
 
 /* Gallery container */
 .gallery {
-  display: flex;
-  overflow: hidden;
-  width: 100%; /* Full width of the container */
-  justify-content: space-between;
+  display: flex !important;
+  overflow: hidden !important;
+  width: 100% !important; /* Full width of the container */
+  justify-content : space-between !important;
 }
 
 /* Gallery images */
 .gallery img {
-  width: 300px; /* Define width for each image */
-  height: 200px;
-  object-fit: cover;
-  flex-shrink: 0;
-  transition: transform 0.5s ease-in-out;
+  width: 300px !important; /* Define width for each image */
+  height: 200px !important;
+  object-fit: cover !important;
+  flex-shrink: 0  !important;
+  transition: transform 0.5s ease-in-out !important;
 }
 
 /* Animation to scroll images */
 @keyframes slide {
   0% {
-    transform: translateX(0);
+    transform: translateX(0) !important;
   }
   100% {
-    transform: translateX(calc(-100% / 5 * 5)); /* Move the carousel */
+    transform: translateX(calc(-100% / 5 * 5)) !important; /* Move the carousel */
   }
 }
 
 /* Autoplay animation */
 .gallery {
-  animation: slide 10s linear infinite;
+  animation: slide 10s linear infinite !important;
 }
