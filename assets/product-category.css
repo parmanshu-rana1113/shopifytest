@@ -2,10 +2,10 @@
 
  .heading{
     width: 100vw;
-    display: flex;
-    justify-content: center;
+    /* display: flex; */
+    /* justify-content: center;
     justify-items: center;
-    align-items: center;
+    align-items: center; */
  }
  .container {
     width: 100vw;
