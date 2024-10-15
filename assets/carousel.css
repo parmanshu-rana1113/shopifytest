@@ -15,6 +15,7 @@
 
 /* Carousel Container */
 .carousel-container {
+  display: flex;
   position: relative;
   max-width: 100%;
   overflow: hidden;
