@@ -16,7 +16,7 @@
   .container {
     display: flex;
     flex-wrap: wrap; /* Allow wrapping for responsive layout */
-    gap: 20px; /* Space between cards */
+    gap: 10px; /* Space between cards */
     justify-content: space-around; /* Center cards */
   }
   
@@ -25,7 +25,7 @@
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    flex: 1 1 30%; /* Flexbox for responsive card size */
+    flex: 1 1 30%; 
     max-width: 300px; /* Optional: limit max card width */
   }
   
@@ -40,7 +40,7 @@
   }
   
   .product-card h2 {
-    font-size: 1.25rem;
+    font-size: 3.25rem;
     color: #3490dc; 
     font-weight: bold;
   }
@@ -50,10 +50,12 @@
   }
   
   .product-card button {
+    width: fit-content;
+    text-align: center;
     background-color: #3490dc;
     color: #ffffff;
     padding: 0.5rem 1rem;
-    border-radius: 0.375rem;
+    border-radius: 1rem;
     transition: background-color 0.3s ease;
   }
   
