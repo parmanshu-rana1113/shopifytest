@@ -66,7 +66,7 @@
         "title": "<strong>Featured products</strong>",
         "heading_size": "h1",
         "description": "",
-        "show_description": false,
+        "show_description": true,
         "description_style": "body",
         "collection": "featured",
         "products_to_show": 10,
