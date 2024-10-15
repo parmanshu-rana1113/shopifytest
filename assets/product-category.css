@@ -7,9 +7,10 @@
   }
   
   .heading {
-    text-align: center;
+    text-align: start;
     font-size: 2rem;
-    margin-bottom: 20px; /* Space between heading and container */
+    margin-bottom: 20px; 
+    font-size: larger;
   }
   
   .container {
