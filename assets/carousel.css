@@ -1,4 +1,13 @@
-/* CSS Variables */
+
+.insight-container{
+  background-color: blue;
+}
+.insight-heading{
+  width: 100%;
+  font-size: 3rem;
+  text-align: center;
+}
+
 .gallery {
   --d: 10s; /* Duration */
   /* display: grid; */
