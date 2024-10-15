@@ -18,7 +18,7 @@
     display: flex;
     flex-wrap: wrap; /* Allow wrapping for responsive layout */
     row-gap: 10px; /* Space between cards */
-    /* justify-content: space-around; */
+    justify-content: space-around;
   }
   
   .product-card {
