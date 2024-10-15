@@ -3,69 +3,62 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Product Page</title>
-  <!-- Link to the external product-category.css file -->
-  <link rel="stylesheet" href="{{ 'product-category.css' | asset_url }}">
+  <title>Responsive Image Carousel</title>
+  <!-- Link to external CSS for styling -->
+  <link rel="stylesheet" href="{{ 'carousel.css' | asset_url }}">
 </head>
 <body>
- 
-  <div class="product-page">
-    <h1 class="heading">Product Category</h1>
-    
-    <div class="container">
-      <!-- Herbicide Card -->
-      <div class="product-card">
-        <img src="https://media.istockphoto.com/id/471505987/photo/roundup-weed-and-grass-killer.jpg?s=612x612&w=0&k=20&c=CHjKN0G-SlbZsB34Y5P74_eGgzEL2814foHMU4pn-TU=" alt="Herbicide Image">
-        <div class="product-info">
-          <h2>Herbicide</h2>
-          <p>Effective solution for weed control in crop.</p>
-          <button>Explore Products</button>
-        </div>
-      </div>
 
-      <!-- Pesticide Card -->
-      <div class="product-card">
-        <img src="https://media.istockphoto.com/id/471505987/photo/roundup-weed-and-grass-killer.jpg?s=612x612&w=0&k=20&c=CHjKN0G-SlbZsB34Y5P74_eGgzEL2814foHMU4pn-TU=" alt="Pesticide Image">
-        <div class="product-info">
-          <h2>Pesticide</h2>
-          <p>Protect your crops with advanced pest control.</p>
-          <button>Explore Products</button>
-        </div>
-      </div>
-
-      <!-- Growth Card -->
-      <div class="product-card">
-        <img src="https://media.istockphoto.com/id/471505987/photo/roundup-weed-and-grass-killer.jpg?s=612x612&w=0&k=20&c=CHjKN0G-SlbZsB34Y5P74_eGgzEL2814foHMU4pn-TU=" alt="Growth Image">
-        <div class="product-info">
-          <h2>Growth</h2>
-          <p>Boost crop growth with our premium solutions.</p>
-          <button>Explore Products</button>
-        </div>
-      </div>
-      <div class="product-card">
-        <img src="https://media.istockphoto.com/id/471505987/photo/roundup-weed-and-grass-killer.jpg?s=612x612&w=0&k=20&c=CHjKN0G-SlbZsB34Y5P74_eGgzEL2814foHMU4pn-TU=" alt="Growth Image">
-        <div class="product-info">
-          <h2>Growth</h2>
-          <p>Boost crop growth with our premium solutions.</p>
-          <button>Explore Products</button>
-        </div>
-      </div>
+<div class="carousel-container">
+  <!-- Left Button -->
+  <button class="carousel-btn left" onclick="moveCarousel(-1)">&#10094;</button>
+  
+  <!-- Carousel Wrapper -->
+  <div class="carousel">
+    <div class="carousel-slide">
+      <img src="image1.jpg" alt="Image 1">
+      <img src="image2.jpg" alt="Image 2">
+      <img src="image3.jpg" alt="Image 3">
+      <img src="image4.jpg" alt="Image 4">
     </div>
-   
   </div>
 
-  <!-- Optional: Add other product-related content here -->
+  <!-- Right Button -->
+  <button class="carousel-btn right" onclick="moveCarousel(1)">&#10095;</button>
+</div>
 
-  {% schema %}
-  {
-    "name": "insight",
-    "settings": [],
-    "presets": [
-      {
-        "name": "insight"
-      }
-    ]
+<script>
+  let currentIndex = 0;
+  const slides = document.querySelector('.carousel-slide');
+  const totalImages = slides.children.length;
+
+  function showSlide(index) {
+    slides.style.transform = `translateX(${-index * 100}%)`;
   }
-  {% endschema %}
+
+  function moveCarousel(direction) {
+    currentIndex = (currentIndex + direction + totalImages) % totalImages;
+    showSlide(currentIndex);
+  }
+
+  // Auto-rotate every 5 seconds
+  setInterval(() => {
+    moveCarousel(1);
+  }, 5000);
+
+</script>
+
+{% schema %}
+{
+  "name": "insight",
+  "settings": [],
+  "presets": [
+    {
+      "name": "insight"
+    }
+  ]
+}
+{% endschema %}
+
 </body>
 </html>

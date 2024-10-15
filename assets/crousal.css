@@ -1,0 +1,61 @@
+/* carousel.css */
+
+.carousel-container {
+    position: relative;
+    max-width: 100%; /* Full width */
+    overflow: hidden;
+  }
+  
+  .carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-slide img {
+    width: 100vw; /* Full viewport width for each image */
+    height: 60vh; /* Adjust height as needed */
+    object-fit: cover; /* Ensure the image covers the entire area */
+  }
+  
+  /* Carousel Buttons */
+  .carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 2rem;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .carousel-btn.left {
+    left: 10px;
+  }
+  
+  .carousel-btn.right {
+    right: 10px;
+  }
+  
+  /* Responsive CSS */
+  @media (max-width: 768px) {
+    .carousel-slide img {
+      height: 40vh; /* Adjust height for medium screens */
+    }
+  
+    .carousel-btn {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .carousel-slide img {
+      height: 30vh; /* Adjust height for small screens */
+    }
+  
+    .carousel-btn {
+      font-size: 1.25rem;
+    }
+  }
+  
