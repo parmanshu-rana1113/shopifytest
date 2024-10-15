@@ -1,7 +1,8 @@
 /* CSS Variables */
 .gallery {
   --d: 10s; /* Duration */
-  display: grid;
+  /* display: grid; */
+  display: flex;
   overflow: hidden;
   width: 380px;
   mask-image: linear-gradient(90deg, rgba(0, 0, 0, 0), black 10%, black 90%, rgba(0, 0, 0, 0)); /* Ensures a fading mask effect */
