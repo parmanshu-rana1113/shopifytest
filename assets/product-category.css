@@ -16,6 +16,7 @@
   }
   
   .container {
+    padding: 24px; 
     display: flex;
     flex-wrap: wrap; /* Allow wrapping for responsive layout */
     gap: 15px; /* Space between cards */
