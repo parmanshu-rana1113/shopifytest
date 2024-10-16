@@ -1,15 +1,14 @@
 /* Insight container styles */
 .insight-container {
-  width: 100vw ;
+  width: 100vw;
   padding: 20px; /* Add padding for better spacing */
   background-color: #f4f4f4;
-   margin-left: 33px;
+  margin-left: 33px;
 }
 
 /* Insight heading styling */
 .insight-heading {
   width: 100% !important;
-  font-size: 4rem !important; 
   text-align: start !important;
   margin-bottom: 20px !important; /* Add space below the heading */
 }
@@ -20,32 +19,44 @@
 
 /* Gallery container */
 .gallery {
-  display: flex !important;
-  overflow: hidden !important;
-  width: 100% !important; /* Full width of the container */
-  justify-content : space-between !important;
+  display: flex;
+  overflow: hidden;
+  width: 100%; /* Full width of the container */
+  position: relative;
 }
 
 /* Gallery images */
 .gallery img {
-  width: 300px !important; /* Define width for each image */
-  height: 200px !important;
-  object-fit: cover !important;
-  flex-shrink: 0  !important;
-  transition: transform 0.5s ease-in-out !important;
+  width: 100%; /* Make each image take full width */
+  height: auto;
+  object-fit: cover;
+  flex-shrink: 0;
+  transition: transform 0.5s ease-in-out;
 }
 
 /* Animation to scroll images */
 @keyframes slide {
   0% {
-    transform: translateX(0) !important;
+    transform: translateX(0); /* Start with the first image */
+  }
+  20% {
+    transform: translateX(-100%); /* Move to second image */
+  }
+  40% {
+    transform: translateX(-200%); /* Move to third image */
+  }
+  60% {
+    transform: translateX(-300%); /* Move to fourth image */
+  }
+  80% {
+    transform: translateX(-400%); /* Move to fifth image */
   }
   100% {
-    transform: translateX(calc(-100% / 5 * 5)) !important; /* Move the carousel */
+    transform: translateX(0); /* Loop back to first image */
   }
 }
 
-/* Autoplay animation */
+/* Apply the animation to the gallery */
 .gallery {
-  animation: slide 10s linear infinite !important;
+  animation: slide 10s infinite;
 }
