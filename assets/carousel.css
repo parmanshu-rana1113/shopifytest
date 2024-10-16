@@ -44,6 +44,9 @@
     gap: 10px;
 }
 
+.try{
+  display:flex;
+}
 .carousel__navigation-button {
     text-decoration: none;
     padding: 0.5rem 1rem;
