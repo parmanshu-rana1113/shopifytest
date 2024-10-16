@@ -1,14 +1,16 @@
 *{
   overflow-x:hidden;
 }
-
+.insight_heading{
+  margin-left:20px;
+}
 .carousel {
   position: relative;
   padding-top: 30%;
   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.3));
   overflow-x: hidden;
   background-color: white; /* Add white background */
-  margin-right:20px;
+  
 }
 
 .carousel__viewport {
