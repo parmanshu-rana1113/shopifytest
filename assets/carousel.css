@@ -1,5 +1,5 @@
 *{
-  /* overflow-x:hidden; */
+  overflow-x:hidden;
 }
 
 .carousel {
@@ -64,7 +64,7 @@
    overflow-x:hidden;
 }
 
-.carousel__navigation-button {
+/* .carousel__navigation-button {
   display: inline-block;
   width: 1.5rem;
   height: 1.5rem;
@@ -73,7 +73,14 @@
   border: 0.25rem solid transparent;
   transition: transform 0.1s;
 
+} */
+
+.carousel__navigation-button {
+    list-style-type: none;
+  list-style:none;
 }
+
+
 
 .carousel__navigation-button:hover {
   transform: scale(1.2);
