@@ -47,6 +47,12 @@
   text-align: center;
 }
 
+.carousel__navigation-list{
+  display: flex;
+    justify-content: center;
+    gap: 4px;
+}
+
 .carousel__navigation-button {
   display: inline-block;
   width: 1.5rem;
