@@ -1,49 +1,61 @@
-<link rel="stylesheet" href="{{ 'carousel.css' | asset_url }}" />
-<div>
+  <link rel="stylesheet" href="{{ 'carousel.css' | asset_url }}">
+  
+  <section class="carousel" aria-label="Gallery">
+    <h1 class="insight_heading">Insight and Updates</h1>
 
-  <h1 class="insight_heading">Insight and Updates</h1>
-
-<section class="carousel" aria-label="Gallery">
-  <ol class="carousel__viewport">
-    <li id="carousel__slide1" tabindex="0" class="carousel__slide">
-      <div class="carousel__snapper">
-        <img src="https://picsum.photos/id/199/400/300" alt="The beach">
-      </div>
-    </li>
-    <li id="carousel__slide2" tabindex="0" class="carousel__slide">
-      <div class="carousel__snapper">
-        <img src="https://picsum.photos/id/1011/400/300" alt="Kayaking">
-      </div>
-    </li>
-    <li id="carousel__slide3" tabindex="0" class="carousel__slide">
-      <div class="carousel__snapper">
-        <img src="https://picsum.photos/id/124/400/300" alt="A small boat in the sea">
-      </div>
-    </li>
-    <li id="carousel__slide4" tabindex="0" class="carousel__slide">
-      <div class="carousel__snapper">
-        <img src="https://picsum.photos/id/235/400/300" alt="Mountain view">
-      </div>
-    </li>
-  </ol>
-  <aside class="carousel__navigation">
-    <ol class="carousel__navigation-list">
-      <li class="carousel__navigation-item">
-        <a href="#carousel__slide1" class="carousel__navigation-button">1</a>
+    <ol class="carousel__viewport" id="carouselViewport">
+      <li id="carousel__slide1" class="carousel__slide">
+        <div class="carousel__snapper">
+          <img src="https://picsum.photos/id/199/400/300" alt="The beach">
+        </div>
       </li>
-      <li class="carousel__navigation-item">
-        <a href="#carousel__slide2" class="carousel__navigation-button">2</a>
+      <li id="carousel__slide2" class="carousel__slide">
+        <div class="carousel__snapper">
+          <img src="https://picsum.photos/id/1011/400/300" alt="Kayaking">
+        </div>
       </li>
-      <li class="carousel__navigation-item">
-        <a href="#carousel__slide3" class="carousel__navigation-button">3</a>
+      <li id="carousel__slide3" class="carousel__slide">
+        <div class="carousel__snapper">
+          <img src="https://picsum.photos/id/124/400/300" alt="A small boat in the sea">
+        </div>
       </li>
-      <li class="carousel__navigation-item">
-        <a href="#carousel__slide4" class="carousel__navigation-button">4</a>
+      <li id="carousel__slide4" class="carousel__slide">
+        <div class="carousel__snapper">
+          <img src="https://picsum.photos/id/235/400/300" alt="Mountain view">
+        </div>
       </li>
     </ol>
-  </aside>
-</section>
-</div>
+
+    <aside class="carousel__navigation">
+      <ol class="carousel__navigation-list">
+        <li class="carousel__navigation-item">
+          <a href="#carousel__slide1" class="carousel__navigation-button">1</a>
+        </li>
+        <li class="carousel__navigation-item">
+          <a href="#carousel__slide2" class="carousel__navigation-button">2</a>
+        </li>
+        <li class="carousel__navigation-item">
+          <a href="#carousel__slide3" class="carousel__navigation-button">3</a>
+        </li>
+        <li class="carousel__navigation-item">
+          <a href="#carousel__slide4" class="carousel__navigation-button">4</a>
+        </li>
+      </ol>
+    </aside>
+  </section>
+
+  <script>
+    // JavaScript for carousel navigation
+    function navigateToSlide(slideIndex) {
+      const carouselViewport = document.getElementById('carouselViewport');
+      const slideWidth = carouselViewport.querySelector('.carousel__slide').offsetWidth;
+      carouselViewport.scrollTo({
+        left: slideWidth * slideIndex,
+        behavior: 'smooth'
+      });
+    }
+  </script>
+
 
 
 {% schema %}

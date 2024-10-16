@@ -1,90 +1,79 @@
-*{
-  overflow-x:hidden;
-}
-.insight_heading{
-     margin-left: 48px;
-}
 .carousel {
-  position: relative;
-  padding-top: 30%;
-  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.3));
-  overflow-x: hidden;
-  background-color: white; /* Add white background */
-  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+    overflow: hidden; /* Ensure only one slide is visible */
 }
 
+.insight_heading {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Carousel Styling */
 .carousel__viewport {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: flex;
-  overflow-x: hidden;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  counter-reset: item;
+    display: flex;
+    width: 100%; /* Ensure full width for one slide at a time */
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 .carousel__slide {
-  position: relative;
-  flex: 0 0 100%;
-  width: 70%;
-  background-color: white;
-  counter-increment: item;
-  overflow-x:hidden;
-}
-.carousel__snapper {
-  display: flex;
-    /* align-items: center; */
+    display: flex;
     justify-content: center;
-  overflow-x:hidden;
+    align-items: center;
+    flex-shrink: 0;
+    width: 100%; /* Full viewport width */
 }
 
 .carousel__snapper img {
-  width: 30%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 10px;
-  margin-top :15px;
-   overflow-x:hidden;
- 
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
 }
 
 .carousel__navigation {
-  position: absolute;
-  right: 0;
-  bottom: 10px;
-  left: 0;
-  text-align: center;
-   overflow-x:hidden;
-}
-
-.carousel__navigation-list{
-  display: flex;
+    display: flex;
     justify-content: center;
-    gap: 4px;
-   overflow-x:hidden;
+    margin-top: 20px;
+    gap: 10px;
 }
-
-/* .carousel__navigation-button {
-  display: inline-block;
-  width: 1.5rem;
-  height: 1.5rem;
-  background-color: #333;
-  border-radius: 50%;
-  border: 0.25rem solid transparent;
-  transition: transform 0.1s;
-
-} */
 
 .carousel__navigation-button {
-    list-style-type: none;
-  list-style:none;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: white;
+    border-radius: 50%;
+    font-size: 1rem;
+    transition: transform 0.3s;
+    cursor: pointer;
 }
 
-
-
 .carousel__navigation-button:hover {
-  transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+/* Media Queries for Responsiveness */
+@media (min-width: 1024px) {
+    .insight_heading {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .insight_heading {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .insight_heading {
+        font-size: 1.8rem;
+    }
 }
