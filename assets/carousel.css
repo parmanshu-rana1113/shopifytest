@@ -9,7 +9,8 @@
 }
 
 .insight_heading {
-    text-align: center;
+    text-align: start;
+  
     font-size: 4rem !important;
     margin-bottom: 10px;
 }
