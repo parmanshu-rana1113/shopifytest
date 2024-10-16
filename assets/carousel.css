@@ -28,7 +28,7 @@ ol, li {
   position: relative;
   flex: 0 0 100%;
   width: 100%;
-  background-color: #fff;
+  background-color: black;
   counter-increment: item;
 }
 
@@ -100,7 +100,7 @@ ol, li {
 
 @media (hover: hover) {
   .carousel__snapper {
-    animation: snap 4s linear infinite;
+    animation: snap 10s linear infinite;
   }
 
   .carousel__slide:last-child .carousel__snapper {
