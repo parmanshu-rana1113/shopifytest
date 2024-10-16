@@ -18,7 +18,7 @@ ol, li {
   bottom: 0;
   left: 0;
   display: flex;
-  overflow-x: scroll;
+  overflow-x: hidden;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   counter-reset: item;
@@ -41,7 +41,7 @@ ol, li {
 }
 
 .carousel__snapper img {
-  width: 100%;
+  width: 60%;
   height: auto;
   object-fit: cover;
   border-radius: 10px;
