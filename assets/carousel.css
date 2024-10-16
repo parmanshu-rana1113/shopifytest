@@ -57,6 +57,7 @@
 }
 .carousel__navigation-list{
   display:flex;
+  gap:2px;
 }
 .carousel__navigation-button:hover {
     transform: scale(1.2);
