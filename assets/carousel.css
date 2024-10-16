@@ -10,7 +10,7 @@
 
 .insight_heading {
     text-align: center;
-    font-size: 4rem;
+    font-size: 4rem !important;
     margin-bottom: 10px;
 }
 
