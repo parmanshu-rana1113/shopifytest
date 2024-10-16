@@ -29,11 +29,13 @@
   width: 70%;
   background-color: white;
   counter-increment: item;
+  overflow-x:hidden;
 }
 .carousel__snapper {
   display: flex;
     /* align-items: center; */
     justify-content: center;
+  overflow-x:hidden;
 }
 
 .carousel__snapper img {
@@ -42,6 +44,7 @@
   object-fit: cover;
   border-radius: 10px;
   margin-top :15px;
+   overflow-x:hidden;
  
 }
 
@@ -51,12 +54,14 @@
   bottom: 10px;
   left: 0;
   text-align: center;
+   overflow-x:hidden;
 }
 
 .carousel__navigation-list{
   display: flex;
     justify-content: center;
     gap: 4px;
+   overflow-x:hidden;
 }
 
 .carousel__navigation-button {
@@ -67,6 +72,7 @@
   border-radius: 50%;
   border: 0.25rem solid transparent;
   transition: transform 0.1s;
+   overflow-x:hidden;
 }
 
 .carousel__navigation-button:hover {
