@@ -26,6 +26,11 @@
   background-color: white;
   counter-increment: item;
 }
+.carousel__snapper {
+  display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
 
 .carousel__snapper img {
   width: 30%;
