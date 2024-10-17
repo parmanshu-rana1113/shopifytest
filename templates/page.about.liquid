@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <style>
+    /* Banner Image */
+    .banner {
+      width: 100%;
+      height: 300px;
+      overflow: hidden;
+    }
+
+    .banner-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+
+    .about-section {
+      text-align: center;
+      padding: 20px;
+      background-color: #f1eeee;
+    }
+
+    .about-section h1 {
+      font-size: 3rem;
+      margin-bottom: 30px;
+    }
+
+    .content-section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 40px 20px;
+      opacity: 0;
+      transform: translateY(100px);
+      transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    }
+
+    .content-section.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .content-text {
+      flex: 1;
+      padding: 20px;
+      font-size: 1.2rem;
+    }
+
+    .content-image {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .content-image img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+
+    .content-section:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+
+    @media (max-width: 768px) {
+      .content-section {
+        flex-direction: column;
+      }
+
+      .content-section:nth-child(even) {
+        flex-direction: column;
+      }
+
+      .about-section h1 {
+        font-size: 2rem;
+      }
+    }
+
+    @media (max-width: 425px) {
+      .about-section h1 {
+        font-size: 1.5rem;
+      }
+
+      .content-text {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="banner">
+    <img
+      src="https://media.istockphoto.com/id/506164764/photo/tractor-spraying-soybean-field.jpg?s=612x612&w=0&k=20&c=h27yHr07QNSghYS20iwYBCGjZIa2HlXqrZDkM0ZsYEw="
+      alt="Agriculture Banner" class="banner-image">
+  </header>
+
+
+  <section class="about-section">
+    <h1>About Us</h1>
+  </section>
+
+  <section class="content-section">
+    <div class="content-text">
+      <p>Lorem Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro pariatur iusto nisi voluptatibus autem
+        totam, dignissimos tenetur cumque nostrum dicta esse architecto animi maxime recusandae, voluptates nemo earum
+        deleniti voluptatem velit officia. Iusto libero dolore id labore? Deleniti placeat ea fugiat nihil deserunt,
+        velit quibusdam! Laborum incidunt voluptas perspiciatis Lorem ipsum dolor sit, amet consectetur adipisicing
+        elit. Tempore at eveniet reiciendis amet, non quod, impedit ab iste sed quae aut libero ipsam! Accusantium
+        necessitatibus impedit non, asperiores vel repudiandae! aperiam quibusdam repudiandae inventore quam numquam at!
+        Dolore commodi praesentium provident? ipsum dolor sit amet, consectetur adipiscing elit. Quisque vestibulum,
+        quam in ultricies fermentum, ex
+        eros ultricies ex, et cursus justo enim id libero.</p>
+    </div>
+    <div class="content-image">
+      <img
+        src="https://plus.unsplash.com/premium_photo-1661962692059-55d5a4319814?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YWdyaWN1bHR1cmV8ZW58MHx8MHx8fDA%3D"
+        alt="Farming Image">
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="content-text">
+      <p>Lorem ipsum Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas libero necessitatibus sapiente
+        optio temporibus corrupti, quae laborum rem quos debitis veritatis id cumque maxime, hic aliquam reiciendis.
+        Optio exercitationem dolore non fuga necessitatibus excepturi, impedit repellendus fugit quas, autem deserunt
+        aliquam vel ex commodi et. Saepe nulla est, dolore eaque enim voluptatem, dolor delectus nobis vero suscipit
+        quisquam nisi necessitatibus. dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor, sit amet
+        consectetur adipisicing elit. Non quos nemo dolore, quas saepe reiciendis rem asperiores odio commodi ducimus
+        aut voluptas, illo, similique minus suscipit ab enim? Inventore, fugiat! Pellentesque imperdiet volutpat magna
+        non laoreet.
+        Aenean in facilisis ex.</p>
+    </div>
+    <div class="content-image">
+      <img
+        src="https://plus.unsplash.com/premium_photo-1661962692059-55d5a4319814?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YWdyaWN1bHR1cmV8ZW58MHx8MHx8fDA%3D"
+        alt="Agriculture Field">
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="content-text">
+      <p>Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam repudiandae unde
+        assumenda ut earum numquam consequatur suscipit quis. Quibusdam, est labore, ut blanditiis repellat tempore quae
+        laboriosam harum autem enim sunt sequi molestiae eaque sint maxime facere mollitia exercitationem vero ex
+        necessitatibus saepe vel eos magni. Deserunt, quos? Nostrum non accusamus obcaecati magni vel voluptatum fugit
+        neque porro. Eveniet exercitationem, dolorem impedit ut minus necessitatibus voluptate similique corporis
+        reprehenderit sint, error facere consequuntur temporibus totam molestias! Ipsa expedita distinctio, optio qui
+        corporis repudiandae commodi praesentium quidem accusamus, asperiores ipsum ea? consectetur adipiscing elit.
+        Phasellus interdum felis sed nisi bibendum, nec
+        fermentum lorem venenatis.</p>
+    </div>
+    <div class="content-image">
+      <img
+        src="https://plus.unsplash.com/premium_photo-1661962692059-55d5a4319814?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YWdyaWN1bHR1cmV8ZW58MHx8MHx8fDA%3D"
+        alt="Farmer Working">
+    </div>
+  </section>
+  <section class="content-section">
+    <div class="content-text">
+      <p>Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+        consequatur quas id similique odio. Necessitatibus nobis temporibus vero assumenda iste eos voluptatum molestias
+        consequatur sapiente ut ea rem et eius repellendus, deleniti voluptatem autem dolore dolorem id laudantium
+        similique. Quasi officiis soluta magnam obcaecati saepe ab asperiores similique non quas repellendus, libero
+        possimus! Dolorem neque odio esse ex aliquam nam qui ratione obcaecati, consectetur ea expedita et laudantium
+        facere? Atque asperiores cupiditate facilis deserunt commodi maiores eius placeat sunt, aspernatur quam impedit
+        rerum et error quia sequi mollitia provident deleniti. adipiscing elit. Phasellus interdum felis sed nisi
+        bibendum, nec
+        fermentum lorem venenatis.</p>
+    </div>
+    <div class="content-image">
+      <img
+        src="https://plus.unsplash.com/premium_photo-1661962692059-55d5a4319814?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YWdyaWN1bHR1cmV8ZW58MHx8MHx8fDA%3D"
+        alt="Farmer Working">
+    </div>
+  </section>
+  <section class="content-section">
+    <div class="content-text">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus interdum Lorem, ipsum dolor sit amet
+        consectetur adipisicing elit. Reiciendis, voluptates, voluptatem debitis culpa aspernatur possimus fuga eligendi
+        quaerat quas eius, libero tempora expedita! Deserunt corporis ad, consequatur officia repellat animi veritatis
+        placeat consectetur numquam facere, voluptatum delectus quo voluptates sed asperiores? Sed sunt ratione fuga
+        magnam quod quam hic nam, exercitationem nulla porro sequi repellendus asperiores quas perspiciatis consectetur
+        dolorum, architecto earum rem vitae quaerat maxime ut. Voluptate fuga distinctio consectetur quibusdam
+        architecto, temporibus quas iure modi odio ex maxime hic officia, repellendus ipsum corrupti possimus veritatis
+        provident libero. Eveniet. felis sed nisi bibendum, nec
+        fermentum lorem venenatis.</p>
+    </div>
+    <div class="content-image">
+      <img
+        src="https://plus.unsplash.com/premium_photo-1661962692059-55d5a4319814?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YWdyaWN1bHR1cmV8ZW58MHx8MHx8fDA%3D"
+        alt="Farmer Working">
+    </div>
+  </section>
+
+
+  <script>
+    const sections = document.querySelectorAll('.content-section');
+
+    window.addEventListener('scroll', () => {
+      sections.forEach(section => {
+        const sectionTop = section.getBoundingClientRect().top;
+        const triggerPoint = window.innerHeight / 1.3;
+
+        if (sectionTop < triggerPoint) {
+          section.classList.add('show');
+        }
+      });
+    });
+  </script>
+
+  
+  
+</body>
+
+</html>
