@@ -2,10 +2,10 @@
 
 .product-page {
   overflow-x: hidden;
-    width: 95vw;
+    width: 98vw;
     padding: 24px;
     /* margin: 10px;  */
-    background-color: black; 
+    /* background-color: black;  */
   }
   
   .heading {
