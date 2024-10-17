@@ -1,6 +1,7 @@
 /* product-category.css */
 
 .product-page {
+  overflow-x: hidden;
     width: 100vw;
     padding: 24px;
     /* margin: 10px;  */
